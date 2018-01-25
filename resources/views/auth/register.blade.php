@@ -1,4 +1,4 @@
-{@extends('layouts.app')
+@extends('layouts.app')
 
 @section('content')
     <div class="text-center">
@@ -20,7 +20,12 @@
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('password_confirmation', 'confirmation') !!}
+                        {!! Form::label('password', 'Password') !!}
+                        {!! Form::password('password', ['class' => 'form-control']) !!}
+                    </div>
+
+                <div class="form-group">
+                    {!! Form::label('password_confirmation', 'Confirmation') !!}
                     {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
                 </div>
 
