@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
     <div class="row">
         <aside class="col-xs-4">
             <div class="panel panel-default">
@@ -31,9 +32,8 @@
                     </a>
                 </li>
             </ul>
-            @if (count($microposts) > 0)
-                @include('microposts.microposts', ['microposts' => $microposts])
-            @endif
+            @include('users.users', ['users' => $users])
         </div>
     </div>
+
 @endsection
